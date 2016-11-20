@@ -20,6 +20,6 @@ You need the following software:
 -	(optional) a Twitter account
 
 ## Next steps
-Please follow LABs 2 and 3.
+Please follow [LAB 2](https://github.com/blumareks/iot-watson-swift/tree/master/lab2) and LAB 3.
 
 @blumareks, http://blumareks.blogpost.com
