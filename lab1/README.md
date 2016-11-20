@@ -9,6 +9,10 @@ To create the application in this lab, follow these main steps:
 3.	(optional) connect to the real device.
 4.	(optional) Publish information to the Twitter.
 
+Here come the flows showing processing of the information from Raspberry Pi to Bluemix Node.Red.
+
+![flows Raspberry Pi -> Bluemix/WatsonIOT platform](img/flows.lab1.png)
+
 ## Prerequisites 
 You need the following software:
 
