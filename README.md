@@ -1,5 +1,8 @@
-# iot-watson-swift
+# Course on how-to manage robots/iot with Watson AI in Swift and Node.Red
 If you like this course - give me a star!
+
+This course shows how to quickly connect iRobot Create2 to Swift app and to leverage Watson AI for visual recognition of images, Voice UI, etc.
+![docking](https://github.com/blumareks/iot-watson-swift/blob/master/lab3/img/docking.png)
 
 Robots - IoT - Watson - Swift - getting all things working together. I spent almost entire summer '16 to find all these components and get them working like this. I hope you would find these labs rewarding! Let me know!
 
