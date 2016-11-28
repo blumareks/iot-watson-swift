@@ -26,6 +26,6 @@ You need the following software:
 -	(optional) Twilio account
 
 ## Next steps
-Please follow LAB 3.
+Please follow [LAB 3](https://github.com/blumareks/iot-watson-swift/tree/master/lab3).
 
 @blumareks, http://blumareks.blogpost.com
