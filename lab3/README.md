@@ -53,7 +53,11 @@ iotfSession.connect(
                 willQos: MQTTQosLevel.atMostOnce,
                 willRetainFlag: false,
                 withClientId: clientId)
+```
+		
 Finally, you are able to send a command over the created MQTT connection:
+
+```swift
 iotfSession.send(BEEP_MSG.data(using: String.Encoding.utf8, allowLossyConversion: false),
                              topic: CMD_TOPIC,
                              qos: MQTTQosLevel.exactlyOnce,
