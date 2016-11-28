@@ -2,6 +2,14 @@
 
 The previous two labs showed us how easily you can connect an IoT to IBM Bluemix and leverage the Watson analytics and external APIs (Twitter and Twilio). This lab demonstrates a further integration of the IoT with smart devices. This lab will show you how you can connect an iOS app with an IoT with the usage of IBM Watson IoT Platform. Optionally we will start to communicate with a robot connected to Raspberry Pi. We will add Voice User Interface to invoke commands on Raspberry Pi. And optionally Voice UI will be all for hands-free usage of the popular STEM robot – iRobot Create2.
 
+## Prerequisites 
+You need the following software/hardware:
+
+-	finished LAB1 i LAB2
+-	(optional) iRobot Create2
+
+@blumareks, http://blumareks.blogpost.com
+
 The following graph shows the architecture of this lab. On the left side on the bottom there is a smart device that connects to Watson IoT Platform service hosted on the Bluemix. Then the commands issued from the smart device invoke actions on the Raspberry Pi. Raspberry Pi is optionally connected thru a serial port with iRobot Create2.
 
 ![architecture](https://github.com/blumareks/iot-watson-swift/blob/master/lab3/img/architecture.png)
@@ -75,6 +83,11 @@ If you have the robot (iRobot Create2) - you might want to connect it now:
 
 ![connecting RPi to iRobot Create2's serial port](https://github.com/blumareks/iot-watson-swift/blob/master/lab3/img/connectRPi2_to_create2.png)
 
+
+## Next steps
+
 [And look for further information on using other commands from the serial port - let me know how it worked for you!](http://www.irobot.com/~/media/MainSite/PDFs/About/STEM/Create/create_2_Op
-en_Interface_Spec.pdf
-)
+en_Interface_Spec.pdf)
+
+
+@blumareks, http://blumareks.blogpost.com
