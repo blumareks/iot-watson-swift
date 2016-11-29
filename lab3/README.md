@@ -14,8 +14,8 @@ The following graph shows the architecture of this lab. On the left side on the 
 
 ![architecture](https://github.com/blumareks/iot-watson-swift/blob/master/lab3/img/architecture.png)
 
-
-There will be some code:
+In order to run the example you would need to run the ```pod install``` from the lab3/ios/WatsonIoTCreate2 directory.
+See the the attached code for setting up the connectivity thru MQTT/WatsonIoTPlatform/Bluemix to Raspberry Pi running Node.Red flow:
 
 ```swift
     /*
@@ -73,7 +73,7 @@ iotfSession.send(BEEP_MSG.data(using: String.Encoding.utf8, allowLossyConversion
 
 ```
 
-And the final Node.Red flow working with the Rapberry Pi:
+And the final Node.Red flow working with the Rapberry Pi that receives the command, and selects if it is a BEEP or DOCK:
 
 ![the flow](https://github.com/blumareks/iot-watson-swift/blob/master/lab3/img/lab3RpiFlow.png)
 
