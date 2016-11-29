@@ -14,7 +14,7 @@ The following graph shows the architecture of this lab. On the left side on the 
 
 ![architecture](https://github.com/blumareks/iot-watson-swift/blob/master/lab3/img/architecture.png)
 
-In order to run the example you would need to run the ```pod install``` from the lab3/ios/WatsonIoTCreate2 directory.
+In order to run the example you would need to run the ```pod install``` from the lab3/ios/WatsonIoTCreate2 directory. Please use ```WatsonIoTCreate2.xcworkspace``` to open the project. You need to build the project to be able to leverage the MQTT client (press *play* arrow with the right simulated or actual device).
 See the the attached code for setting up the connectivity thru MQTT/WatsonIoTPlatform/Bluemix to Raspberry Pi running Node.Red flow:
 
 ```swift
