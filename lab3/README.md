@@ -86,7 +86,7 @@ If you have the robot (iRobot Create2) - you might want to connect it now:
 
 ## Next steps
 
-[And look for further information on using other commands from the serial port - let me know how it worked for you!](http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_600_Open_Interface_Spec.pdf?la=en)
+[And look for further information on using other commands from the serial port - let me know how it worked for you!](http://www.irobot.com/~/media/MainSite/PDFs/About/STEM/Create/create_2_Open_Interface_Spec.pdf)
 
 
 @blumareks, http://blumareks.blogpost.com
