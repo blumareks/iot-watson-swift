@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E625D5A24622ED4B9BF5570 /* Pods_CheckIoTTemp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0DA8991ED5669513C13E60 /* Pods_CheckIoTTemp.framework */; };
+		D74EE1251E42266C00261B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE1241E42266C00261B01 /* AppDelegate.swift */; };
+		D74EE1271E42266C00261B01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE1261E42266C00261B01 /* ViewController.swift */; };
+		D74EE12A1E42266C00261B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74EE1281E42266C00261B01 /* Main.storyboard */; };
+		D74EE12C1E42266C00261B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74EE12B1E42266C00261B01 /* Assets.xcassets */; };
+		D74EE12F1E42266C00261B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74EE12D1E42266C00261B01 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32A29555A954AC7C5D089AEA /* Pods-CheckIoTTemp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIoTTemp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIoTTemp/Pods-CheckIoTTemp.release.xcconfig"; sourceTree = "<group>"; };
+		AD0DA8991ED5669513C13E60 /* Pods_CheckIoTTemp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckIoTTemp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74EE1211E42266C00261B01 /* CheckIoTTemp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckIoTTemp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74EE1241E42266C00261B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D74EE1261E42266C00261B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D74EE1291E42266C00261B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D74EE12B1E42266C00261B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D74EE12E1E42266C00261B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D74EE1301E42266C00261B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E790CF3D7068163F356C19BC /* Pods-CheckIoTTemp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckIoTTemp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckIoTTemp/Pods-CheckIoTTemp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D74EE11E1E42266C00261B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E625D5A24622ED4B9BF5570 /* Pods_CheckIoTTemp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3156DEEF5FA8A9C6C3A77BFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E790CF3D7068163F356C19BC /* Pods-CheckIoTTemp.debug.xcconfig */,
+				32A29555A954AC7C5D089AEA /* Pods-CheckIoTTemp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88E45F7B49C57A82031671A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD0DA8991ED5669513C13E60 /* Pods_CheckIoTTemp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D74EE1181E42266C00261B01 = {
+			isa = PBXGroup;
+			children = (
+				D74EE1231E42266C00261B01 /* CheckIoTTemp */,
+				D74EE1221E42266C00261B01 /* Products */,
+				3156DEEF5FA8A9C6C3A77BFE /* Pods */,
+				88E45F7B49C57A82031671A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D74EE1221E42266C00261B01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D74EE1211E42266C00261B01 /* CheckIoTTemp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D74EE1231E42266C00261B01 /* CheckIoTTemp */ = {
+			isa = PBXGroup;
+			children = (
+				D74EE1241E42266C00261B01 /* AppDelegate.swift */,
+				D74EE1261E42266C00261B01 /* ViewController.swift */,
+				D74EE1281E42266C00261B01 /* Main.storyboard */,
+				D74EE12B1E42266C00261B01 /* Assets.xcassets */,
+				D74EE12D1E42266C00261B01 /* LaunchScreen.storyboard */,
+				D74EE1301E42266C00261B01 /* Info.plist */,
+			);
+			path = CheckIoTTemp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D74EE1201E42266C00261B01 /* CheckIoTTemp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74EE1331E42266C00261B01 /* Build configuration list for PBXNativeTarget "CheckIoTTemp" */;
+			buildPhases = (
+				5DA5A98799EDA163D4B5EC83 /* [CP] Check Pods Manifest.lock */,
+				D74EE11D1E42266C00261B01 /* Sources */,
+				D74EE11E1E42266C00261B01 /* Frameworks */,
+				D74EE11F1E42266C00261B01 /* Resources */,
+				3B4232BCD21E4641E28EA88C /* [CP] Embed Pods Frameworks */,
+				0CF0E3B77C88BE157B0DDA25 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckIoTTemp;
+			productName = CheckIoTTemp;
+			productReference = D74EE1211E42266C00261B01 /* CheckIoTTemp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D74EE1191E42266C00261B01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Marek Sadowski";
+				TargetAttributes = {
+					D74EE1201E42266C00261B01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2H7LQB994Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D74EE11C1E42266C00261B01 /* Build configuration list for PBXProject "CheckIoTTemp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D74EE1181E42266C00261B01;
+			productRefGroup = D74EE1221E42266C00261B01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D74EE1201E42266C00261B01 /* CheckIoTTemp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D74EE11F1E42266C00261B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74EE12F1E42266C00261B01 /* LaunchScreen.storyboard in Resources */,
+				D74EE12C1E42266C00261B01 /* Assets.xcassets in Resources */,
+				D74EE12A1E42266C00261B01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CF0E3B77C88BE157B0DDA25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckIoTTemp/Pods-CheckIoTTemp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B4232BCD21E4641E28EA88C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckIoTTemp/Pods-CheckIoTTemp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DA5A98799EDA163D4B5EC83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D74EE11D1E42266C00261B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74EE1271E42266C00261B01 /* ViewController.swift in Sources */,
+				D74EE1251E42266C00261B01 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D74EE1281E42266C00261B01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D74EE1291E42266C00261B01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D74EE12D1E42266C00261B01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D74EE12E1E42266C00261B01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D74EE1311E42266C00261B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D74EE1321E42266C00261B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D74EE1341E42266C00261B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E790CF3D7068163F356C19BC /* Pods-CheckIoTTemp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H7LQB994Z;
+				INFOPLIST_FILE = CheckIoTTemp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.CheckIoTTemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D74EE1351E42266C00261B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A29555A954AC7C5D089AEA /* Pods-CheckIoTTemp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H7LQB994Z;
+				INFOPLIST_FILE = CheckIoTTemp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.CheckIoTTemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D74EE11C1E42266C00261B01 /* Build configuration list for PBXProject "CheckIoTTemp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74EE1311E42266C00261B01 /* Debug */,
+				D74EE1321E42266C00261B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74EE1331E42266C00261B01 /* Build configuration list for PBXNativeTarget "CheckIoTTemp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74EE1341E42266C00261B01 /* Debug */,
+				D74EE1351E42266C00261B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D74EE1191E42266C00261B01 /* Project object */;
+}
