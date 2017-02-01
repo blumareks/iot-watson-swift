@@ -116,7 +116,7 @@ Here comes the code to connect to Cloudant DB, and read the JSON with the embedd
 
 Let’s parse JSON to get the temperature. Since the response JSON from the find query looks like the following console debug we would need to get to the nested part of the document marked in red:
 
-```json
+```
 Read document: Optional(["warning": no matching index found, create an index to optimize query time, "docs": <__NSSingleObjectArrayI 0x608000007e90>(
 {
     payload = 40;
