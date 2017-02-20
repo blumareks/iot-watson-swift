@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckIoTTemp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVZ-Ve-tte">
+                                <rect key="frame" x="127" y="20" width="120" height="30"/>
+                                <state key="normal" title="Refresh IoT Temp"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OuU-OT-Afi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43n-eD-8hv">
+                                <rect key="frame" x="113" y="58" width="148" height="114"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b91-eB-ZN3">
+                                <rect key="frame" x="143" y="142" width="89" height="30"/>
+                                <state key="normal" title="show picture"/>
+                                <connections>
+                                    <action selector="showPictureButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XyX-j5-cUD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G1p-16-7ik">
+                                <rect key="frame" x="37" y="180" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G1p-16-7ik" secondAttribute="height" multiplier="3:2" id="7Pt-6H-wCf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PVZ-Ve-tte" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0jZ-6w-7h7"/>
+                            <constraint firstItem="b91-eB-ZN3" firstAttribute="top" secondItem="PVZ-Ve-tte" secondAttribute="bottom" constant="92" id="6jP-ej-Hed"/>
+                            <constraint firstItem="PVZ-Ve-tte" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9bU-o1-VhX"/>
+                            <constraint firstItem="G1p-16-7ik" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fzg-Us-Ev1"/>
+                            <constraint firstItem="G1p-16-7ik" firstAttribute="top" secondItem="b91-eB-ZN3" secondAttribute="bottom" constant="8" id="Kdc-Lz-Pjy"/>
+                            <constraint firstItem="43n-eD-8hv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2g-sO-Wpv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G1p-16-7ik" secondAttribute="trailing" constant="22" id="XOM-yI-amS"/>
+                            <constraint firstItem="G1p-16-7ik" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="Yle-yc-SbR"/>
+                            <constraint firstItem="43n-eD-8hv" firstAttribute="top" secondItem="PVZ-Ve-tte" secondAttribute="bottom" constant="8" id="cUL-Kb-lHK"/>
+                            <constraint firstItem="b91-eB-ZN3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gHO-6S-JJs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageFromDb" destination="G1p-16-7ik" id="9q7-lz-5RM"/>
+                        <outlet property="tempLabel" destination="43n-eD-8hv" id="ts0-Zm-ipb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
