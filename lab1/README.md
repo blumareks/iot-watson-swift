@@ -39,7 +39,7 @@ Optionally you might want to change it further for the readability purposes. Whe
 Let’s see how the temperatures are being recorded. We can open the Cloudant DB Dashboard and investigate the temperature records.
 
 Now we are ready for the next step of building an iOS app with the UI to read the temperature from Cloudant DB.
-Let’s create a UI in SWIFT in XCode. [Please refer to the solution youtube video - click here](https://youtu.be/dsNXsHrW5TA) on how to deploy a button (Refresh IoT Temp) and the Label on the UI Main.storyboard from the Object Library.
+Let’s create a UI in SWIFT in XCode. how to deploy a button (Refresh IoT Temp) and the Label on the UI Main.storyboard from the Object Library.
 
 You can now connect the UI with the code. Please refer to the solution video on how to do it.
 Here comes the final result of doing so:
