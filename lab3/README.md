@@ -97,17 +97,15 @@ We would need to do the following steps:
 
 1. create a cartfile to include Watson-Developer-Cloud sdk for iOS, Bluemix Services sdk for ios, and SwiftyJson sdks. 
 
-First issue the command in the root directory of the app: 
-```shell
-carthage update --platform iOS
-```
-copy and paste
+First issue the command in the root directory of the app: ```cat > cartfile```,
+and copy and paste
 ```
 github "ibm-bluemix-mobile-services/bms-clientsdk-swift-core"
 github "SwiftyJSON/SwiftyJSON"
 github "watson-developer-cloud/swift-sdk"
 ``` 
-then We will run the command ```carthage update --platform iOS``` to fetch the libraries from git.
+
+Then We will run the command ```carthage update --platform iOS``` to fetch the libraries from git.
 We need to reference the following libraries from the Carthage/iOS directory:
  - BMSAnalytics.framework
  - BMSCore.framework
