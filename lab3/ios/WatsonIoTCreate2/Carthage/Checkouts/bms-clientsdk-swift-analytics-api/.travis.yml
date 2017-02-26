@@ -1,0 +1,15 @@
+language: objective-c
+matrix:
+  include:
+    - osx_image: xcode7.3
+    - osx_image: xcode8.1
+script:
+  - pod lib lint
+  - xcodebuild -scheme 'BMSAnalyticsAPI iOS' clean build CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO
+  - xcodebuild -scheme 'BMSAnalyticsAPI watchOS' clean build CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO
+  - travis_retry xcodebuild test -scheme 'BMSAnalyticsAPI Tests' -destination 'platform=iOS Simulator,name=iPhone 6s'
+
+  # When merging or pushing to the master branch, release a new version
+  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] && [[ "${TRAVIS_JOB_NUMBER}" = *".2"* ]]; then
+      bash scripts/release.sh;
+    fi

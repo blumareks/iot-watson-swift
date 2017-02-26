@@ -1,0 +1,33 @@
+module: BMSCore
+author: IBM
+github_url: https://github.com/ibm-bluemix-mobile-services/bms-clientsdk-swift-core
+
+skip_undocumented: true
+clean: true
+
+custom_categories:
+  - name: Client
+    children:
+    - BMSClient
+
+  - name: Network Requests
+    children:
+    - BMSURLSession
+    - BaseRequest
+    - Request
+    - Response
+    - HttpMethod
+
+  - name: Network Monitoring
+    children:
+    - NetworkMonitor
+    - NetworkConnection
+
+  - name: Completion Handlers
+    children:
+    - BMSDataTaskCompletionHandler
+    - BMSCompletionHandler
+
+  - name: Error
+    children:
+    - BMSCoreError

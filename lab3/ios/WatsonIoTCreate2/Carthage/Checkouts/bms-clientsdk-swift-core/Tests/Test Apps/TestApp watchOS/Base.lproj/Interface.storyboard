@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TestApp_watchOS_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="GET request" id="FZ7-md-EtA">
+                            <connections>
+                                <action selector="getRequestButtonPressed" destination="AgC-eL-Hgc" id="Esf-hn-fz0"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="147.5" alignment="left" textAlignment="center" id="7ak-JI-liT"/>
+                    </items>
+                    <connections>
+                        <outlet property="responseLabel" destination="7ak-JI-liT" id="vga-DF-zG9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="325" y="358.75"/>
+        </scene>
+    </scenes>
+</document>

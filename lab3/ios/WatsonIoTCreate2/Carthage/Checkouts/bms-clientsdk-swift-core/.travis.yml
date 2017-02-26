@@ -1,0 +1,23 @@
+language: objective-c
+matrix:
+  include:
+    - osx_image: xcode7.3
+    - osx_image: xcode8.1
+install:
+  - gem install jazzy
+before_script:
+  - rm -rf ~/Library/Developer/Xcode/DerivedData
+script:
+  # Test that the framework can be installed and built, and passes all unit tests
+  - travis_wait pod update
+  - carthage update
+  - pod lib lint --allow-warnings
+  - xcodebuild -workspace 'BMSCore.xcworkspace' -scheme 'BMSCore iOS' clean build CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO
+  - xcodebuild -workspace 'BMSCore.xcworkspace' -scheme 'BMSCore watchOS' clean build CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO
+  - travis_retry xcodebuild -workspace 'BMSCore.xcworkspace' test -scheme 'BMSCore Tests' -destination 'platform=iOS Simulator,name=iPhone 6' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+
+  # When merging or pushing to the master branch, release a new version and publish the API documentation
+  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] && [[ "${TRAVIS_JOB_NUMBER}" = *".2"* ]]; then
+      bash scripts/release.sh;
+      bash scripts/publish-docs.sh;
+    fi

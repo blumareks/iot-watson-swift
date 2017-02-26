@@ -13,7 +13,39 @@
 		D73D9A491DE67C8F00BC6D55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73D9A471DE67C8F00BC6D55 /* Main.storyboard */; };
 		D73D9A4B1DE67C8F00BC6D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73D9A4A1DE67C8F00BC6D55 /* Assets.xcassets */; };
 		D73D9A4E1DE67C8F00BC6D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73D9A4C1DE67C8F00BC6D55 /* LaunchScreen.storyboard */; };
+		D7744D2F1E62557500523422 /* BMSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7744D2A1E62557500523422 /* BMSCore.framework */; };
+		D7744D301E62557500523422 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7744D2B1E62557500523422 /* RestKit.framework */; };
+		D7744D311E62557500523422 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7744D2C1E62557500523422 /* SpeechToTextV1.framework */; };
+		D7744D321E62557500523422 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7744D2D1E62557500523422 /* SwiftyJSON.framework */; };
+		D7744D331E62557500523422 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7744D2E1E62557500523422 /* TextToSpeechV1.framework */; };
+		D7744D351E6255AF00523422 /* BMSAnalyticsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7744D341E6255AF00523422 /* BMSAnalyticsAPI.framework */; };
+		D7744D371E6255CB00523422 /* BMSAnalyticsAPI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7744D341E6255AF00523422 /* BMSAnalyticsAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7744D381E6255CB00523422 /* BMSCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7744D2A1E62557500523422 /* BMSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7744D391E6255CB00523422 /* RestKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7744D2B1E62557500523422 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7744D3A1E6255CB00523422 /* SpeechToTextV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7744D2C1E62557500523422 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7744D3B1E6255CB00523422 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7744D2D1E62557500523422 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7744D3C1E6255CB00523422 /* TextToSpeechV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7744D2E1E62557500523422 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7744D3E1E62698E00523422 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7744D3D1E62698E00523422 /* WeatherData.swift */; };
+		D7744D401E626A0C00523422 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7744D3F1E626A0C00523422 /* String.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7744D361E6255BF00523422 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D7744D371E6255CB00523422 /* BMSAnalyticsAPI.framework in CopyFiles */,
+				D7744D381E6255CB00523422 /* BMSCore.framework in CopyFiles */,
+				D7744D391E6255CB00523422 /* RestKit.framework in CopyFiles */,
+				D7744D3A1E6255CB00523422 /* SpeechToTextV1.framework in CopyFiles */,
+				D7744D3B1E6255CB00523422 /* SwiftyJSON.framework in CopyFiles */,
+				D7744D3C1E6255CB00523422 /* TextToSpeechV1.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F299C85B55BBD10BC70E06D /* Pods-WatsonIoTCreate2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonIoTCreate2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatsonIoTCreate2/Pods-WatsonIoTCreate2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -26,6 +58,14 @@
 		D73D9A4A1DE67C8F00BC6D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73D9A4D1DE67C8F00BC6D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73D9A4F1DE67C8F00BC6D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7744D2A1E62557500523422 /* BMSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMSCore.framework; path = Carthage/Build/iOS/BMSCore.framework; sourceTree = "<group>"; };
+		D7744D2B1E62557500523422 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		D7744D2C1E62557500523422 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		D7744D2D1E62557500523422 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D7744D2E1E62557500523422 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		D7744D341E6255AF00523422 /* BMSAnalyticsAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMSAnalyticsAPI.framework; path = Carthage/Build/iOS/BMSAnalyticsAPI.framework; sourceTree = "<group>"; };
+		D7744D3D1E62698E00523422 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		D7744D3F1E626A0C00523422 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +73,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7744D2F1E62557500523422 /* BMSCore.framework in Frameworks */,
+				D7744D351E6255AF00523422 /* BMSAnalyticsAPI.framework in Frameworks */,
 				9ECD82CDA9F841A5824DD370 /* Pods_WatsonIoTCreate2.framework in Frameworks */,
+				D7744D301E62557500523422 /* RestKit.framework in Frameworks */,
+				D7744D331E62557500523422 /* TextToSpeechV1.framework in Frameworks */,
+				D7744D311E62557500523422 /* SpeechToTextV1.framework in Frameworks */,
+				D7744D321E62557500523422 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +106,12 @@
 		D73D9A371DE67C8F00BC6D55 = {
 			isa = PBXGroup;
 			children = (
+				D7744D341E6255AF00523422 /* BMSAnalyticsAPI.framework */,
+				D7744D2A1E62557500523422 /* BMSCore.framework */,
+				D7744D2B1E62557500523422 /* RestKit.framework */,
+				D7744D2C1E62557500523422 /* SpeechToTextV1.framework */,
+				D7744D2D1E62557500523422 /* SwiftyJSON.framework */,
+				D7744D2E1E62557500523422 /* TextToSpeechV1.framework */,
 				D73D9A421DE67C8F00BC6D55 /* WatsonIoTCreate2 */,
 				D73D9A411DE67C8F00BC6D55 /* Products */,
 				BC52F3F307F5CB614DD6EC15 /* Pods */,
@@ -84,6 +136,8 @@
 				D73D9A4A1DE67C8F00BC6D55 /* Assets.xcassets */,
 				D73D9A4C1DE67C8F00BC6D55 /* LaunchScreen.storyboard */,
 				D73D9A4F1DE67C8F00BC6D55 /* Info.plist */,
+				D7744D3D1E62698E00523422 /* WeatherData.swift */,
+				D7744D3F1E626A0C00523422 /* String.swift */,
 			);
 			path = WatsonIoTCreate2;
 			sourceTree = "<group>";
@@ -101,6 +155,7 @@
 				D73D9A3E1DE67C8F00BC6D55 /* Resources */,
 				93959F1598C69AEE8821F236 /* [CP] Embed Pods Frameworks */,
 				E8F43E5131439B9522EB4561 /* [CP] Copy Pods Resources */,
+				D7744D361E6255BF00523422 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -213,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73D9A461DE67C8F00BC6D55 /* ViewController.swift in Sources */,
+				D7744D3E1E62698E00523422 /* WeatherData.swift in Sources */,
+				D7744D401E626A0C00523422 /* String.swift in Sources */,
 				D73D9A441DE67C8F00BC6D55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +393,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H7LQB994Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WatsonIoTCreate2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonIoTCreate2;
@@ -350,6 +411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H7LQB994Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WatsonIoTCreate2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.WatsonIoTCreate2;

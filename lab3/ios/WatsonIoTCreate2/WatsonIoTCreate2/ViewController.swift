@@ -8,6 +8,12 @@
 
 import UIKit
 import MQTTClient
+//STT
+import SpeechToTextV1
+//TTS
+import TextToSpeechV1
+//audio!
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -20,7 +26,63 @@ class ViewController: UIViewController {
     let DOCK_MSG = "2" //dock
     let IOT_API_KEY = "<step 3. your_boilerplates_iot_apikey>"
     let IOT_AUTH_TOKEN = "<step 2. your_boilerplates_iot_token>"
- 
+    
+    //STT + Weather + TTS
+    @IBOutlet weak var speechToTextLabel: UILabel!
+    
+    @IBAction func micButtonTouchedDown(_ sender: Any) {
+        NSLog("mic button pressed down - starting to listen")
+        
+        //STT - listen for the *forecast* command
+        let usernameSTT = "STT user name from bluemix"
+        let passwordSTT = "STT password from bluemix"
+        let speechToText = SpeechToText(username: usernameSTT, password: passwordSTT)
+        
+        var settings = RecognitionSettings(contentType: .opus)
+        settings.continuous = false
+        settings.interimResults = false
+        let failureSTT = {(error: Error) in print(error)}
+        speechToText.recognizeMicrophone(settings: settings, failure: failureSTT) { results in
+            print(results.bestTranscript)
+            self.speechToTextLabel.text! = results.bestTranscript
+            NSLog("stopping Mic")
+            speechToText.stopRecognizeMicrophone()
+            
+            if (self.speechToTextLabel.text!.contains("forecast")){
+                NSLog("found forecast")
+                
+                //fetch weather data from Weather Company Data
+                let weather = WeatherData()
+                weather.getCurrentWeather()
+                //print the weather forecast
+                print(weather.getGolf())
+                sleep(1)// some time to get the result from Weather Company Data
+                print(weather.getGolf())
+                let textToSay = weather.getGolf()
+                
+                
+                //TTS - say the data
+                let username = "TTS user name from bluemix"
+                let password = "TTS password from bluemix"
+                let textToSpeech = TextToSpeech(username: username, password: password)
+                let failureTTS = { (error: Error) in print(error) }
+                textToSpeech.synthesize(textToSay, voice: SynthesisVoice.us_Michael.rawValue, failure: failureTTS) { data in
+                    var audioPlayer: AVAudioPlayer // see note below
+                    audioPlayer = try! AVAudioPlayer(data: data)
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.play()
+                    sleep(4)
+                    NSLog("end of tts")
+                }
+                
+            }
+            NSLog("end STT")
+            
+        }
+
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

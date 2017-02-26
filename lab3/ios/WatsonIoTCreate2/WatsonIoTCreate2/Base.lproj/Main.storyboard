@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,17 +36,38 @@
                                     <action selector="buttonDockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3SU-RW-cBH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43e-c1-Iuw">
+                                <rect key="frame" x="172" y="617" width="30" height="30"/>
+                                <state key="normal" title="MIC"/>
+                                <connections>
+                                    <action selector="micButtonTouchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="SZu-EE-3OF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rt-T7-dLI">
+                                <rect key="frame" x="0.0" y="588" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Rt-T7-dLI" secondAttribute="trailing" id="32c-oL-isK"/>
                             <constraint firstItem="KyB-Pf-Lrg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3l2-Ul-qVQ"/>
                             <constraint firstItem="KyB-Pf-Lrg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9RI-X0-l3B"/>
+                            <constraint firstItem="43e-c1-Iuw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cbj-Jo-LDG"/>
+                            <constraint firstItem="8Rt-T7-dLI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DW5-I2-V30"/>
                             <constraint firstItem="YLY-Oj-cqJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QTS-e3-oq0"/>
                             <constraint firstItem="KyB-Pf-Lrg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="X0P-Ce-qMm"/>
                             <constraint firstItem="YLY-Oj-cqJ" firstAttribute="top" secondItem="KyB-Pf-Lrg" secondAttribute="bottom" constant="8" id="cBf-ft-3N1"/>
                             <constraint firstItem="YLY-Oj-cqJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gnC-Qc-xKJ"/>
+                            <constraint firstItem="43e-c1-Iuw" firstAttribute="top" secondItem="8Rt-T7-dLI" secondAttribute="bottom" constant="8" id="m7Y-Fv-LpQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="43e-c1-Iuw" secondAttribute="bottom" constant="20" id="xXr-py-Tkd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="speechToTextLabel" destination="8Rt-T7-dLI" id="S8S-mP-khA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
